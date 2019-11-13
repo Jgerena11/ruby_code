@@ -1,0 +1,32 @@
+
+name1 = "larry"
+health1 = 60
+
+puts "#{name1.capitalize} has a health of #{health1}"
+
+name2 = "curly"
+health2 = 125
+puts "#{name2.upcase} has a health of #{health2}"
+health2 = health1
+puts "#{name2.upcase} has a health of #{health2}"
+health1 = 30
+puts "\n#{name2.upcase} has a health of #{health2}"
+puts "#{name1.capitalize} has a health of #{health1}"
+
+
+name3 = "moe"
+health3 = 100
+
+puts "#{name3} has a health of #{health3}.".center(40, '*')
+
+name4 = "shemp"
+health4 = 90
+
+puts "#{name4.ljust(30, '.')} #{health4} health"
+
+day = Time.now.strftime('%d')
+month = Time.now.strftime('%m')
+year = Time.now.strftime('%Y')
+weekday = Time.now.strftime('%A')
+time = Time.new.strftime('%I:%M%p')
+puts "The game started on #{weekday}, #{day}/#{month}/#{year} at #{time}"
